@@ -1,11 +1,13 @@
 # tip-calculation-app
-![Tip App Görseli](./tip_app.png)
 ## Açıklama:
 Bu proje, Kotlin dili kullanılarak bir bahşiş hesaplama uygulaması geliştirilmiştir. Kullanıcılar, hizmet bedelini girerek ve yüzde oranını ayarlayarak ödenecek toplam bahşiş miktarını öğrenebilirler.
 ## Kullanılan Teknolojiler:
 - Kotlin
 - Android Studio
 - XML (UI tasarımı için)
+- ## Uygulama Görseli:
+Uygulamanın nasıl göründüğüne dair bir örnek:
+- ![Tip App Görseli](./tip_app.png)
 ## Kurulum Talimatları:
 1. Bu projeyi bilgisayarınıza klonlayın.
 2. Android Studio ile açın.
