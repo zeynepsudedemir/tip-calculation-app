@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/hesaptutari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Hesap"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/tipyüzdesi"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tipyüzdesi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tiptutarı"
+        app:layout_constraintTop_toBottomOf="@+id/hesaptutari"
+        tools:text="%24" />
+
+    <TextView
+        android:id="@+id/tiptutarı"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Bahşiş"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/totalhesap"
+        app:layout_constraintTop_toBottomOf="@+id/tipyüzdesi" />
+
+    <TextView
+        android:id="@+id/totalhesap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Toplam"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tiptutarı" />
+
+    <EditText
+        android:id="@+id/ethesaptutarı"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:ems="6"
+        android:hint="Hesap Tutarı"
+        android:inputType="numberDecimal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/hesaptutari"
+        app:layout_constraintStart_toEndOf="@+id/hesaptutari"
+        app:layout_constraintTop_toTopOf="@+id/hesaptutari" />
+
+    <SeekBar
+        android:id="@+id/seekBaryüzde"
+        android:layout_width="0dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="100dp"
+        android:max="30"
+        android:scrollbarSize="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tipyüzdesi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tipyüzdesi"
+        app:layout_constraintStart_toStartOf="@+id/ethesaptutarı"
+        app:layout_constraintTop_toTopOf="@+id/tipyüzdesi" />
+
+    <TextView
+        android:id="@+id/tvtotalhesap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/totalhesap"
+        app:layout_constraintStart_toStartOf="@+id/tvtiptutarı"
+        app:layout_constraintTop_toTopOf="@+id/totalhesap"
+        tools:text="103.11" />
+
+    <TextView
+        android:id="@+id/tvtiptutarı"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tiptutarı"
+        app:layout_constraintStart_toStartOf="@+id/seekBaryüzde"
+        app:layout_constraintTop_toTopOf="@+id/tiptutarı"
+        tools:text="19.96" />
+</androidx.constraintlayout.widget.ConstraintLayout>
