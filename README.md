@@ -5,7 +5,7 @@ Bu proje, Kotlin dili kullanılarak bir bahşiş hesaplama uygulaması geliştir
 - Kotlin
 - Android Studio
 - XML (UI tasarımı için)
-- ## Uygulama Görseli:
+## Uygulama Görseli:
 Uygulamanın nasıl göründüğüne dair bir örnek:
 - ![Tip App Görseli](./tip_app.png)
 ## Kurulum Talimatları:
